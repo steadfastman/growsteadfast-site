@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://growsteadfast.com/sitemap.xml
