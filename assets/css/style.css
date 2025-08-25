@@ -55,3 +55,7 @@ a:hover{opacity:.9}
 .footer-base{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--stone);margin-top:1rem;padding-top:1rem}
 @media (max-width: 920px){.grid-2{grid-template-columns:1fr} .cards-3{grid-template-columns:1fr} .footer-grid{grid-template-columns:1fr 1fr}}
 @media (max-width: 640px){.footer-grid{grid-template-columns:1fr} .site-nav{position:fixed;inset:64px 0 auto 0;background:#fff;border-bottom:1px solid var(--stone);transform:translateY(-130%);transition:.25s ease;padding:1rem} .site-nav.open{transform:none} .site-nav ul{flex-direction:column;gap:.5rem;margin-bottom:1rem} .nav-toggle{display:block}}
+
+.hidden{display:none !important}
+
+.visually-hidden{position:absolute;clip:rect(0 0 0 0);clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap}
