@@ -1,3 +1,1 @@
-User-agent: *
-Allow: /
-Sitemap: https://growsteadfast.com/sitemap.xml
+User-agent: *\nAllow: /\nSitemap: https://growsteadfast.com/sitemap.xml\n
