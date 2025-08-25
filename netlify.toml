@@ -7,3 +7,5 @@
   package = "@netlify/plugin-lighthouse"
   [plugins.inputs.settings]
     preset = "desktop"
+
+[[redirects]] from = "/youtube" to = "https://www.youtube.com/@growsteadfast" status = 301
