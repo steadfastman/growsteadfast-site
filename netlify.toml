@@ -1,14 +1,58 @@
-
 [build]
   publish = "."
   command = ""
 
+# Lighthouse report on deploy (optional)
 [[plugins]]
   package = "@netlify/plugin-lighthouse"
   [plugins.inputs.settings]
     preset = "desktop"
 
-[[redirects]] from = "/youtube" to = "https://www.youtube.com/@growsteadfast" status = 301
-[[redirects]] from = "/apply"   to = "/contact.html#apply" status = 302
-[[redirects]] from = "/waitlist" to = "/contact.html#waitlist" status = 302
-[[redirects]] from = "/patreon" to = "https://www.patreon.com/YourPage" status = 301
+# -----------------------------
+# Redirects (Steadfast Man)
+# -----------------------------
+
+# Easy-to-say short links
+[[redirects]]
+  from = "/youtube"
+  to = "https://www.youtube.com/@growsteadfast"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/apply"
+  to = "/contact.html#apply"
+  status = 302
+
+[[redirects]]
+  from = "/waitlist"
+  to = "/contact.html#waitlist"
+  status = 302
+
+# Update this to your real Patreon URL when ready
+[[redirects]]
+  from = "/patreon"
+  to = "https://patreon.com/"
+  status = 301
+
+# Pretty URLs for core pages
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 301
+
+[[redirects]]
+  from = "/coaching"
+  to = "/coaching.html"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 301
+
+# 404 fallback
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
