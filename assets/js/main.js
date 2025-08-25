@@ -14,7 +14,7 @@ document.querySelectorAll('.site-nav a').forEach(a => {
 });
 document.querySelectorAll('form').forEach(form => {
   form.addEventListener('submit', (e) => {
-    const fields = form.querySelectorAll('input[required], textarea[required], select[required]');
+    const fields = form.querySelectorAll('input[required], textarea[required]');
     let invalid = false;
     fields.forEach(f => {
       const wrapper = f.closest('.input');
