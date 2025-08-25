@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact · Steadfast Man Coaching</title>
-  <meta name="description" content="Schedule a free discovery call or send a message to Steadfast Man Coaching.">
+  <meta name="description" content="Work with Nick: apply for 1-on-1 coaching; join the community on YouTube or Patreon.">
   <meta name="keywords" content="Christian life coach for men, biblical manhood, Christian leadership, Steadfast Man Coaching, Christian coaching for men, Christian men coaching">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="assets/css/style.css">
   <meta property="og:title" content="Contact · Steadfast Man Coaching">
-  <meta property="og:description" content="Schedule a free discovery call or send a message to Steadfast Man Coaching.">
+  <meta property="og:description" content="Work with Nick: apply for 1-on-1 coaching; join the community on YouTube or Patreon.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/img/og-hero.png">
   <meta property="og:site_name" content="Steadfast Man Coaching">
@@ -43,11 +43,71 @@
 
   <section class="page-hero slim">
     <div class="container">
-      <h1>Work With Nick</h1><p class="lead">This is a one‑man shop, focused on serving paying clients well. Start with the channel and community, then apply for 1‑on‑1 coaching when you’re ready for deeper work.</p>
+      <h1>Work With Nick</h1>
+      <p class="lead">This is a one‑man shop, focused on serving paying clients well. Start with the channel and community, then apply for 1‑on‑1 coaching when you’re ready for deeper work.</p>
     </div>
   </section>
 
-  
+  <section class="section" id="work-with-me">
+    <div class="container grid-2 gap-xl">
+      <div id="apply">
+        <h2>Apply for 1‑on‑1 Coaching</h2>
+        <p class="muted">If accepted, you’ll receive a private Google Calendar link to schedule paid sessions.</p>
+        <form name="coaching-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form" action="thank-you.html">
+          <input type="hidden" name="form-name" value="coaching-application">
+          <p class="hidden"><label>Don’t fill this out: <input name="bot-field"></label></p>
+          <div class="input">
+            <label for="ap-name">Name</label>
+            <input id="ap-name" name="name" type="text" required>
+            <small class="error-msg">Please enter your name.</small>
+          </div>
+          <div class="input">
+            <label for="ap-email">Email</label>
+            <input id="ap-email" name="email" type="email" required>
+            <small class="error-msg">Please enter a valid email address.</small>
+          </div>
+          <div class="input">
+            <label for="ap-timezone">Time Zone</label>
+            <input id="ap-timezone" name="timezone" type="text" placeholder="e.g., US/Central" required>
+          </div>
+          <div class="input">
+            <label for="ap-goals">What outcomes are you seeking?</label>
+            <textarea id="ap-goals" name="goals" rows="4" required></textarea>
+          </div>
+          <div class="input">
+            <label for="ap-challenge">What’s your biggest challenge right now?</label>
+            <textarea id="ap-challenge" name="challenge" rows="4" required></textarea>
+          </div>
+          <div class="input">
+            <label for="ap-commit">Are you ready to invest time, attention, and resources?</label>
+            <select id="ap-commit" name="commitment" required>
+              <option value="">Choose…</option>
+              <option value="yes-now">Yes — ready to start</option>
+              <option value="maybe-soon">Maybe — need more clarity</option>
+              <option value="not-now">Not right now</option>
+            </select>
+          </div>
+          <div class="btn-row">
+            <button class="btn btn-primary" type="submit">Submit Application</button>
+          </div>
+        </form>
+      </div>
+      <div>
+        <h2>Join the Community</h2>
+        <div class="card">
+          <h3 class="card-title">YouTube Channel</h3>
+          <p>Weekly teaching, practical frameworks, and Q&amp;A to help you build biblical habits and leadership.</p>
+          <a class="btn btn-secondary" href="https://www.youtube.com/@growsteadfast" target="_blank" rel="noopener">Watch on YouTube</a>
+        </div>
+        <div class="card mt-m" id="membership">
+          <h3 class="card-title">Steadfast Alliance (Patreon)</h3>
+          <p>Members‑only devotionals, community, and monthly live sessions.</p>
+          <a class="btn btn-ghost" href="https://patreon.com/" target="_blank" rel="noopener">Join on Patreon</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section section-soft" id="waitlist">
     <div class="container" style="max-width:720px">
       <h2 class="section-title">Group Coaching Waitlist</h2>
@@ -71,7 +131,6 @@
       </form>
     </div>
   </section>
-
 
   </main>
   <footer class="site-footer">
