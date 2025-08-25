@@ -59,3 +59,17 @@ a:hover{opacity:.9}
 .hidden{display:none !important}
 
 .visually-hidden{position:absolute;clip:rect(0 0 0 0);clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap}
+
+
+
+/* Accessible skip link: hidden until focused */
+.skip-link{
+  position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;
+}
+.skip-link:focus{
+  left:16px; top:12px; width:auto; height:auto; overflow:visible;
+  padding:.5rem .75rem; background:#fff; color:var(--navy);
+  border:2px solid var(--navy); border-radius:.5rem; z-index:10000;
+  box-shadow:0 2px 12px rgba(0,0,0,.15);
+}
+
