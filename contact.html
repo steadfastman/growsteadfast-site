@@ -2,112 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact · Steadfast Man Coaching</title>
-  <meta name="description" content="Schedule a free discovery call or send a message to Steadfast Man Coaching.">
-  <meta name="keywords" content="Christian life coach for men, biblical manhood, Christian leadership, Steadfast Man Coaching, Christian coaching for men, Christian men coaching">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.png" type="image/png">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <meta property="og:title" content="Contact · Steadfast Man Coaching">
-  <meta property="og:description" content="Schedule a free discovery call or send a message to Steadfast Man Coaching.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/og-hero.png">
-  <meta property="og:site_name" content="Steadfast Man Coaching">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Steadfast Man Coaching</title>
+  <meta name="description" content="Apply for 1-on-1 coaching or join the community.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Steadfast Man Coaching home">
-        <img src="assets/img/logo-mark.png" alt="" class="logo-mark" width="36" height="36">
-        <span class="brand-text">Steadfast Man Coaching</span>
-      </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="site-nav" data-nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="coaching.html">Coaching</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main id="main">
+<a class="skip-link" href="#main">Skip to content</a>
 
-  <section class="page-hero slim">
-    <div class="container">
-      <h1>Work With Nick</h1><p class="lead">I work directly with every client. Start with the channel and community, then apply for 1-on-1 coaching when you’re ready for deeper work.</p>
-    </div>
-  </section>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="/"><img src="/assets/img/logo.png" alt="Steadfast Man Coaching logo"><span>Steadfast Man Coaching</span></a>
+    <nav class="menu" aria-label="Main">
+      <a href="/#home">Home</a>
+      <a href="/about">About</a>
+      <a href="/coaching">Coaching</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  
-  <section class="section section-soft" id="waitlist">
-    <div class="container" style="max-width:720px">
-      <h2 class="section-title">Group Coaching Waitlist</h2>
-      <p class="muted">Get a heads‑up when the next cohort opens.</p>
-      <form name="forge-waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form" action="thank-you.html">
-        <input type="hidden" name="form-name" value="forge-waitlist">
+<main id="main" class="section">
+  <div class="container grid-2">
+    <section id="apply">
+      <h1>Apply for 1‑on‑1 Coaching</h1>
+      <p class="help">If accepted, you'll receive a private Google Calendar link to schedule paid sessions.</p>
+      <form name="coaching-application" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="coaching-application">
         <p class="hidden"><label>Don’t fill this out: <input name="bot-field"></label></p>
-        <div class="grid-2" style="gap:.75rem">
-          <div class="input">
-            <label for="wl-name">Name</label>
-            <input id="wl-name" name="name" type="text" required>
-          </div>
-          <div class="input">
-            <label for="wl-email">Email</label>
-            <input id="wl-email" name="email" type="email" required>
-          </div>
-        </div>
-        <div class="btn-row" style="margin-top:.5rem">
-          <button class="btn btn-secondary" type="submit">Join Waitlist</button>
-        </div>
+
+        <p><label>Name<br><input type="text" name="name" required></label></p>
+        <p><label>Email<br><input type="email" name="email" required></label></p>
+        <p><label>Time Zone<br><input type="text" name="timezone" placeholder="e.g., US/Central"></label></p>
+        <p><label>What outcomes are you seeking?<br><textarea name="outcomes" rows="4"></textarea></label></p>
+        <p><label>What's your biggest challenge right now?<br><textarea name="challenge" rows="4"></textarea></label></p>
+        <p><label>Are you ready to invest time, attention, and resources?<br>
+          <select name="readiness" required>
+            <option value="">Choose...</option>
+            <option>Yes — I'm ready now</option>
+            <option>Maybe — I want to learn more</option>
+          </select></label>
+        </p>
+        <div data-netlify-recaptcha="true"></div>
+        <p class="cta"><button class="btn btn-accent" type="submit">Submit Application</button></p>
       </form>
-    </div>
-  </section>
+    </section>
 
-
-  </main>
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <div class="brand-inline">
-          <img src="assets/img/logo-mark.png" alt="" class="logo-mark" width="28" height="28">
-          <strong>Steadfast Man Coaching</strong>
+    <aside id="community">
+      <h2>Join the Community</h2>
+      <div class="card">
+        <div class="card-body">
+          <h3>YouTube Channel</h3>
+          <p>Weekly teaching, practical frameworks, and Q&amp;A to help you build biblical habits and leadership.</p>
+          <p class="cta"><a class="btn btn-primary" href="/youtube">Watch on YouTube</a></p>
         </div>
-        <p class="muted">Stand Firm. Live with Purpose.</p>
       </div>
-      <div>
-        <h4>Quick Links</h4>
-        <ul class="footer-links">
-          <li><a href="about.html">About</a></li>
-          <li><a href="coaching.html">Coaching</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="sitemap.xml">Sitemap</a></li>
-        </ul>
+
+      <div class="card">
+        <div class="card-body">
+          <h3>Steadfast Alliance (Patreon)</h3>
+          <p>Members‑only devotionals, community, and monthly live sessions.</p>
+          <p class="cta"><a class="btn btn-primary" href="/patreon">Join on Patreon</a></p>
+        </div>
       </div>
-      <div>
-        <h4>Stay in the loop</h4>
-        <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="newsletter-form" action="thank-you.html">
-          <input type="hidden" name="form-name" value="newsletter">
-          <p class="hidden"><label>Don’t fill this out: <input name="bot-field"></label></p>
-          <label class="visually-hidden" for="newsletter-email">Email</label>
-          <input id="newsletter-email" type="email" name="email" placeholder="Email address" required>
-          <button class="btn btn-secondary" type="submit">Subscribe</button>
-        </form>
-      </div>
-    </div>
-    <div class="container footer-base">
-      <small>© <span data-year></span> Steadfast Man Coaching. All rights reserved.</small>
-      <small><a href="index.html#privacy">Privacy</a> · <a href="index.html#terms">Terms</a></small>
-    </div>
-  </footer>
-  <script defer src="assets/js/main.js"></script>
-</body>
-</html>
+
+      <section id="waitlist">
+        <div class="card">
+          <div class="card-body">
+            <h3>Group Coaching Waitlist</h3>
+            <form name="forge-waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="forge-waitlist">
+              <p class="hidden"><label>Don’t fill this out: <input name="bot-field"></label></p>
+              <p><label>Name<br><input type="text" name="name" required></label></p>
+              <p><label>Email<br><input type="email" name="email" required></label></p>
+              <p class="cta"><button class="btn btn-accent" type="submit">Join Waitlist</button></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p class="cta">
+      <a class="btn btn-primary" href="/youtube">Watch the YouTube Channel</a>
+      <a class="btn btn-accent" href="/apply">Apply for 1-on-1 Coaching</a>
+    </p>
+    <small>&copy; 2025 Steadfast Man Coaching. All rights reserved.</small>
+  </div>
+</footer>
+
+</body></html>
