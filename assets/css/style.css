@@ -79,17 +79,14 @@ img{max-width:100%;display:block} a{color:var(--navy);text-decoration:none} a:ho
 .section-soft{background:#fff;border-top:1px solid var(--stone);border-bottom:1px solid var(--stone)}
 
 
-/* Make only the hero "Apply for 1-on-1 Coaching" button stand out */
-.hero .cta a[href*="apply"]{
-  background: var(--bronze, #C1843A);
-  color: #0D2138;
-  border: 2px solid rgba(0,0,0,.15);
-  font-weight: 800;
-  box-shadow: 0 8px 24px rgba(0,0,0,.25);
-}
-.hero .cta a[href*="apply"]:hover,
-.hero .cta a[href*="apply"]:focus-visible{
-  filter: brightness(.95);
-  transform: translateY(-1px);
-  box-shadow: 0 10px 28px rgba(0,0,0,.28);
-}
+/* second button in the hero row */
+.hero .cta a + a { ... }
+
+/* href contains /apply or #apply (case-insensitive) */
+.hero a[href*="/apply" i],
+.hero a[href*="#apply" i] { ... }
+
+/* fallback: any .btn that links to apply anywhere */
+a.btn[href*="/apply" i],
+a.btn[href*="#apply" i] { ... }
+
