@@ -1,0 +1,35 @@
+
+/* Scoped styles for the Apply page only */
+.apply-page{background:#f7f8fb;padding:3rem 0}
+.apply-page .container{width:min(900px,92%);margin:0 auto}
+.apply-page .card{background:#fff;border:1px solid #e6e9ef;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.06);overflow:hidden}
+.apply-page .card-body{padding:1.5rem 1.75rem}
+.apply-page h1{font-family:'Montserrat',sans-serif;color:var(--navy,#142B4A);margin:0 0 .75rem}
+.apply-page .lead{color:#4a5a73;margin:.25rem 0 1.25rem;max-width:60ch}
+.apply-page form{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.25rem;margin-top:.5rem}
+.apply-page .field{display:flex;flex-direction:column;gap:.35rem}
+.apply-page label{font-family:'Montserrat',sans-serif;font-weight:700;color:var(--navy,#142B4A);}
+.apply-page input,.apply-page textarea,.apply-page select{
+  width:100%;padding:.8rem .9rem;border:1px solid #d6dbe6;border-radius:10px;font-size:1rem;background:#fff
+}
+.apply-page textarea{min-height:120px;resize:vertical}
+.apply-page .field--full{grid-column:1/-1}
+.apply-page .actions{grid-column:1/-1;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:.25rem}
+.apply-page [data-netlify-recaptcha]{transform:scale(.98);transform-origin:left top}
+.apply-page .cta-row{display:flex;gap:.75rem;flex-wrap:wrap;justify-content:flex-start;margin-top:1rem}
+.apply-page hr{border:none;border-top:1px solid #e6e9ef;margin:1.75rem 0}
+.apply-page .hidden{display:none!important}
+
+/* Buttons (scoped) */
+.apply-page .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.1rem;border-radius:14px;border:2px solid transparent;font-weight:800;text-decoration:none}
+.apply-page .btn-primary{background:var(--navy,#142B4A);color:#fff}
+.apply-page .btn-primary:hover{filter:brightness(1.05);transform:translateY(-1px)}
+.apply-page .btn-accent{background:var(--bronze,#C1843A);color:#0D2138;border:2px solid rgba(0,0,0,.12);box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.apply-page .btn-accent:hover{filter:brightness(.95);transform:translateY(-1px)}
+.apply-page .btn-outline{background:transparent;color:var(--navy,#142B4A);border:2px solid rgba(20,43,74,.35)}
+.apply-page .btn-outline:hover{background:rgba(20,43,74,.06)}
+
+/* Mobile */
+@media (max-width: 760px){
+  .apply-page form{grid-template-columns:1fr}
+}
